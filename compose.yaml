@@ -1,6 +1,6 @@
 services:
   php:
-    image: php:8.2-apache
+    build: .
     container_name: php_test
     ports:
       - "8081:80"

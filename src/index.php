@@ -3,6 +3,19 @@
 
     $a = 2;
     $b = 3;
+
+    $host = "mysql";
+    $user = "dev";
+    $password = "devpass";
+    $database = "esercizi";
+
+    $conn = new mysqli($host, $user, $password, $database);
+
+    if ($conn->connect_error) {
+        die("Connessione fallita: " . $conn->connect_error);
+    }
+
+    echo "Connessione avvenuta con successo";
 ?>
 
 
